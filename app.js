@@ -8,7 +8,7 @@ const port = 3000;
 const appId = '1528f286ca0347b8b2ffee2f21d15869';
 const appCertificate = 'b9ca573fdbba4f9781dfe79c82f71b34';
 
-app.get('/generate_token/:git init/:uid', (req, res) => {
+app.get('/token/:channelName/:uid', (req, res) => {
   const channelName = req.params.channelName;
   const uid = req.params.uid;
 
